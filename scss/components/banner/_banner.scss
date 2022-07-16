@@ -1,0 +1,42 @@
+.c-banner {
+  background-image: url('../../../assets/images/bg-banner.jpg');
+  height: 860px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &__wrapper {
+    align-items: center;
+    text-align: center;
+    color: $c-white;
+    display: flex;
+    height: 100%;
+  }
+  &__content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-weight: 800;
+    font-size: 72px;
+    @include media('<=tablet') {
+      font-size: 48px;
+    }
+    @include media('<=phone') {
+      font-size: 30px;
+    }
+  }
+  &__desc {
+    margin-top: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 22px;
+    @include media('<=tablet') {
+      line-height: 30px;
+      font-size: 18px;
+    }
+  }
+  &__button {
+    margin-top: 40px;
+  }
+}

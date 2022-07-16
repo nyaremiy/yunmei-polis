@@ -1,0 +1,54 @@
+.c-nav {
+  @include media('<=tablet') {
+    box-shadow: -5px 0px 7px 0px rgba($c-black-text, 0.2);
+    transition: all 0.2s linear;
+    background: $c-silver;
+    overflow-y: scroll;
+    position: absolute;
+    padding: 70px 0;
+    height: 100vh;
+    right: -100%;
+    z-index: 16;
+    width: 65%;
+    bottom: 0;
+    top: 0;
+  }
+  @include media('<=phone') {
+    width: 100%;
+  }
+  &--active {
+    position: fixed;
+    right: 0;
+  }
+  &__list {
+    align-items: center;
+    display: flex;
+    @include media('<=tablet') {
+      flex-direction: column;
+      margin: 20px 0;
+    }
+  }
+  &__item {
+    margin-right: 40px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include media('<=desktop') {
+      margin-right: 15px;
+      font-size: 12px;
+    }
+    @include media('<=tablet') {
+      margin: 0 0 15px 0;
+      font-size: 18px;
+    }
+  }
+  &__link {
+    color: $c-white;
+    @include media('<=tablet') {
+      color: $c-black-text;
+    }
+  }
+}

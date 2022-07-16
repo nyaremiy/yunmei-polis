@@ -1,0 +1,13 @@
+.e-fullScreenDisable {
+  backdrop-filter: blur(2px);
+  position: fixed;
+  display: none;
+  z-index: 14;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  &--active {
+    display: block;
+  }
+}

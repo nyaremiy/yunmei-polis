@@ -1,0 +1,7 @@
+.c-logo-black {
+  width: 160px;
+  @include media('<=desktop') {
+    min-width: 100px;
+    width: 100px;
+  }
+}

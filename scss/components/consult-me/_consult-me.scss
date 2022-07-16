@@ -1,0 +1,37 @@
+.c-consult-me {
+  background-image: url('../../../assets/images/consult-bg.jpg');
+  height: 570px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrapper {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    height: 100%;
+  }
+  &__content {
+    margin: 0 auto;
+    max-width: 635px;
+    text-align: center;
+    color: $c-white;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    @include media('<=tablet') {
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+  &__desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+  }
+  &__button {
+    margin-top: 35px;
+  }
+}

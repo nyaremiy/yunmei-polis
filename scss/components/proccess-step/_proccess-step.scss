@@ -1,0 +1,38 @@
+.c-proccess-step {
+  position: relative;
+  padding: 40px 30px 40px 40px;
+  background-color: $c-white;
+  box-shadow: 0px 0px 50px rgba(104, 142, 180, 0.2);
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  &__icon-box {
+    margin-right: 25px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $c-black-text;
+  }
+  &__icon {
+    color: $c-blue;
+    font-size: 62px;
+  }
+  &__desc {
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    z-index: 2;
+  }
+  &__number {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    color: $c-silver;
+    font-size: 112px;
+    font-weight: 800;
+    z-index: 0;
+  }
+}

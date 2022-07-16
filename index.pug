@@ -1,0 +1,27 @@
+extends ./src/_extends/common
+
+
+block title 
+  title Yunmei Poles 
+
+block styles 
+  link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+  link(rel="shortcut icon" href="./assets/images/favicon/favicon.png" type="image/x-icon")
+  link(rel="stylesheet" href="./index.css")
+
+
+block main 
+  .app
+    +header
+    +banner
+    +products
+    +our-power
+    +our-factory
+    +processes 
+    +packingAndDelivery
+    +consultMe
+    +footer
+
+block scripts 
+  script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js" type="module")
+  script(src="./js/index.js" type="module") 

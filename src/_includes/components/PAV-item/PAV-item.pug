@@ -1,0 +1,9 @@
+mixin PAVItem(args={})
+  .c-PAV-item
+    .c-PAV-item__image-box 
+      - if(args.nameImg === 'photo') {
+        img(src="../../../../assets/images/PAV/photo.png" alt="photo")
+      -}else {
+        img(src="../../../../assets/images/PAV/video.png" alt="video")
+      -}
+    .c-PAV-item__name-block= args.name

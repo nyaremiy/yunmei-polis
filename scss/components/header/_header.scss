@@ -1,0 +1,16 @@
+.c-header {
+  background-color: transparent;
+  @include fixedTop();
+  z-index: 10;
+  &__wrapper {
+    justify-content: space-between;
+    padding-bottom: 35px;
+    align-items: center;
+    padding-top: 35px;
+    display: flex;
+  }
+  &__contacts {
+    align-items: center;
+    display: flex;
+  }
+}

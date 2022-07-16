@@ -1,0 +1,33 @@
+.c-packing-and-delivery {
+  background-color: $c-white;
+  &__wrapper {
+    padding-bottom: 140px;
+    padding-top: 140px;
+  }
+  &__title {
+    color: $c-black-text;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    @include media('<=phone') {
+      font-size: 42px;
+    }
+  }
+  &__items {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 65px;
+    @include media('<=tablet') {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  &__text {
+    margin-top: 60px;
+    color: $c-black-text-2;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 36px;
+  }
+}

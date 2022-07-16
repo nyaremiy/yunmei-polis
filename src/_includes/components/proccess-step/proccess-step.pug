@@ -1,0 +1,9 @@
+mixin proccess-step(args={})
+  .c-proccess-step
+    .c-proccess-step__number= '0' + args.icon
+    .c-proccess-step__icon-box
+      svg.icon.c-proccess-step__icon
+        use(xlink:href='#icon-step' + args.icon )
+    .c-proccess-step__info-box
+      h4.c-proccess-step__title= args.title
+      h4.c-proccess-step__desc= args.desc

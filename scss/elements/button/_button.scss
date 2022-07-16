@@ -1,0 +1,41 @@
+.e-button {
+  background-color: $c-orange;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 4px;
+  outline-style: none;
+  border-style: none;
+  width: fit-content;
+  font-weight: 700;
+  color: $c-white;
+  cursor: pointer;
+  &--header {
+    padding: 0 30px;
+    font-size: 12px;
+    height: 50px;
+    @include media('<=desktop') {
+      font-size: 10px;
+      padding: 0 10px;
+      height: 40px;
+    }
+    @include media('<=tablet') {
+      display: none;
+    }
+  }
+  &--banner,
+  &--power,
+  &--consult {
+    font-size: 14px;
+    padding: 0 60px;
+    height: 60px;
+  }
+  &--power {
+    @include media('<=tablet') {
+      font-size: 12px;
+    }
+    @include media('<=tablet') {
+      padding: 0 15px;
+      font-size: 10px;
+    }
+  }
+}

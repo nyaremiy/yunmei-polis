@@ -1,0 +1,23 @@
+.c-call-btn {
+  background-color: $c-green;
+  border-radius: 50%;
+  position: relative;
+  margin-left: 20px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  @include media('<=desktop') {
+    margin-left: 10px;
+  }
+  @include media('<=tablet') {
+    display: none;
+  }
+  &__icon {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: $c-white;
+    font-size: 20px;
+    left: 52%;
+    top: 48%;
+  }
+}

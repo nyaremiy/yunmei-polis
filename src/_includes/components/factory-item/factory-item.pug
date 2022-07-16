@@ -1,0 +1,7 @@
+mixin factory-item(args={})
+  .c-factory-item
+    .c-factory-item__icon-block
+      svg.icon.c-factory-item__icon
+        use(xlink:href='#icon-factory0' + args.icon )
+    h3.c-factory-item__title= args.title
+    .c-factory-item__desc= args.desc

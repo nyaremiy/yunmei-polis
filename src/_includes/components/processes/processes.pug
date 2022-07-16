@@ -1,0 +1,13 @@
+mixin processes 
+  .c-processes
+    .container.c-processes__wrapper
+      h2.c-processes__title Our manufacturing process includes:
+      .c-processes__steps
+        .c-processes__step
+          +proccess-step({icon :'1', title : 'Step one:', desc : 'Finding the right parts/details — once a design option is approved, we use 3D detailing to decide what joints, bolts and nuts, plate sizes to use, where assembly and construction points should be. It also determines Bill of Materials, as well as Erection and Shop Drawings, minimizing human error. '})
+        .c-processes__step
+          +proccess-step({icon :'2', title : 'Step two:', desc : 'Assembling the prototype — before going into mass production, we assemble every new tower type to see if the design works.'})
+        .c-processes__step
+          +proccess-step({icon :'3', title : 'Step three:', desc : 'We produce a batch of towers/poles and when it’s done conduct on-site testing — every new tower type is assembled in the field, calibrated, rigged and tested to make sure it matches the client’s specifications.'})
+        .c-processes__step
+          +proccess-step({icon :'4', title : 'Step four:', desc : 'When the batch is ready, we label the product and pack it before shipping to its destination.'})

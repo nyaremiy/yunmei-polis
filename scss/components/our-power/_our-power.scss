@@ -1,0 +1,49 @@
+.c-our-power {
+  background-color: $c-bg-silver;
+  &__wrapper {
+    padding-bottom: 150px;
+    padding-top: 140px;
+    text-align: center;
+  }
+  &__title {
+    color: $c-black-text;
+    font-weight: 700;
+    font-size: 48px;
+    @include media('<=phone') {
+      font-size: 42px;
+    }
+  }
+  &__text {
+    color: $c-black-text-2;
+    line-height: 36px;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 auto;
+    @include media('<=phone') {
+      line-height: 28px;
+      font-size: 16px;
+    }
+  }
+  &__items {
+    margin-top: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 30px;
+    justify-items: center;
+    @include media('<=tablet') {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 20px 20px;
+    }
+    @include media('<=phone') {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+    }
+  }
+  &__button {
+    margin-top: 50px;
+  }
+}

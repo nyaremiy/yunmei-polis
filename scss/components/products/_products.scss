@@ -1,0 +1,60 @@
+.c-products {
+  background-color: $c-white;
+  &__wrapper {
+    padding-bottom: 140px;
+    text-align: center;
+    padding-top: 240px;
+    @include media('<=phone') {
+      padding-top: 140px;
+    }
+  }
+  &__title {
+    color: $c-black-text;
+    line-height: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    @include media('<=phone') {
+      font-size: 42px;
+    }
+  }
+  &__desc {
+    color: $c-black-text-2;
+    line-height: 36px;
+    max-width: 700px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0 auto;
+    @include media('<=phone') {
+      line-height: 28px;
+      font-size: 16px;
+    }
+  }
+  &__block {
+    margin-top: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+      'item1 item2 item4'
+      'item1 item3 item4';
+    justify-items: center;
+    @include media('<=phone') {
+      gap: 5px 5px;
+    }
+  }
+  &__item1 {
+    grid-area: item1;
+  }
+  &__item2 {
+    grid-area: item2;
+  }
+  &__item3 {
+    grid-area: item3;
+  }
+  &__item4 {
+    grid-area: item4;
+  }
+}

@@ -1,0 +1,23 @@
+.c-PAV-item {
+  transition: $t-normal;
+  cursor: pointer;
+  padding: 20px;
+  background-color: $c-white;
+  display: flex;
+  align-items: center;
+  border: 1px solid $c-silver-2;
+  border-radius: 6px;
+  &__image-box {
+    max-width: 38px;
+    margin-right: 15px;
+  }
+  &__name-block {
+    font-weight: 700;
+    font-size: 14px;
+    color: $c-black-text;
+    text-transform: uppercase;
+  }
+  &:hover {
+    background-color: $c-bg-silver;
+  }
+}

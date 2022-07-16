@@ -1,0 +1,22 @@
+.c-power-item {
+  text-align: center;
+
+  &__icon {
+    font-size: 62px;
+    color: $c-blue;
+  }
+  &__title {
+    text-transform: uppercase;
+    color: $c-black-text;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: 18px;
+    min-height: 55px;
+  }
+  &__desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

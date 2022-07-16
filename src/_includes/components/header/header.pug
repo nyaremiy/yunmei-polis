@@ -1,0 +1,10 @@
+mixin header 
+  header.c-header
+    .container.c-header__wrapper
+      +logo
+      +navigation
+      +fullScreenDisable
+      .c-header__contacts
+        +button({text: 'contuct us', class: 'e-button--header'})
+        +call-btn
+      +burger

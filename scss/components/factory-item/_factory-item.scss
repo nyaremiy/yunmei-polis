@@ -1,0 +1,25 @@
+.c-factory-item {
+  background-color: $c-white;
+  text-align: center;
+  box-shadow: 0px 0px 50px rgba(104, 142, 180, 0.2);
+  border-radius: 8px;
+  padding: 35px 25px;
+  &__icon {
+    font-size: 62px;
+    color: $c-blue;
+  }
+  &__title {
+    text-transform: uppercase;
+    color: $c-black-text;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 25px;
+    font-size: 18px;
+    min-height: 55px;
+  }
+  &__desc {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

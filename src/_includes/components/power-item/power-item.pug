@@ -1,0 +1,7 @@
+mixin power-item(args={})
+  .c-power-item
+    .c-power-item__icon-block
+      svg.icon.c-power-item__icon
+        use(xlink:href='#icon-power0' + args.icon )
+    h3.c-power-item__title= args.title
+    .c-power-item__desc= args.desc

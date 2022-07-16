@@ -1,0 +1,30 @@
+.c-logotypes {
+  max-width: 1160px;
+  background: $c-white;
+  box-shadow: 0px 0px 50px rgba(104, 142, 180, 0.2);
+  border-radius: 8px;
+  padding: 30px 35px;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  margin: 0 auto;
+  bottom: 0;
+  transform: translateY(50%);
+  @include media('<=1230px') {
+    margin: 0 20px 0 0;
+  }
+  @include media('<=phone') {
+    margin-right: 10px;
+    padding: 10px 15px;
+  }
+  &__item {
+    margin-right: 25px;
+    max-width: 140px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include media('<=phone') {
+      margin-right: 10px;
+    }
+  }
+}

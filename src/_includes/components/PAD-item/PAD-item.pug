@@ -1,0 +1,7 @@
+mixin PADItem(args={})
+  .c-PAD-item
+    .c-PAD-item__icon-box 
+      svg.icon.c-PAD-item__icon
+        use(xlink:href='#icon-pad-item0' + args.icon)
+    h4.c-PAD-item__title= args.title
+    .c-PAD-item__desc= args.desc
